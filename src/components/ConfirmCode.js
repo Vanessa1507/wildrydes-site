@@ -1,7 +1,7 @@
 import { Auth } from 'aws-amplify';
 import { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router';
-import getSearchParams from './js/getSearchParams';
+import getSearchParams from '../js/getSearchParams';
 
 const ConfirmCode = () => {
   const [username, setUserName] = useState();

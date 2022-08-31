@@ -1,8 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from '../logo.svg';
+import '../styles/App.css';
 
 import { Amplify, Auth } from 'aws-amplify';
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 
 Amplify.configure({
   Auth: {
@@ -27,7 +28,17 @@ Amplify.configure({
   }
 });
 
-function App() {
+function Home() {
+
+  useEffect(() => {
+    const currentSession = async () => {
+      const response = await Auth.currentUserPoolUser();
+      console.log('%cHome.js line:22 response', 'color: #007acc;', typeof response, response);
+    }
+
+    currentSession()
+  }, [])
+
   return (
     <div className="App">
       <header className="App-header">
@@ -43,4 +54,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

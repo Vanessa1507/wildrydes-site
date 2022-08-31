@@ -1,26 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Register from './Register';
-import ConfirmCode from './ConfirmCode';
-import LogIn from './LogIn';
-import Home from './Home';
+//Functions
+import reportWebVitals from './reportWebVitals';
+//Components
+import App from './components/App';
+import ConfirmCode from './components/ConfirmCode';
+import Home from './components/Home';
+import LogIn from './components/LogIn';
+import Register from './components/Register';
+//Styles
+import './styles/index.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-
     <BrowserRouter>
       <Routes>
-        <Route path='/home' element={<App />} />
+        <Route path='/home' element={<Home />} />
         <Route path='/register' element={<Register />} />
         <Route path='/confirm-code' element={<ConfirmCode />} />
         <Route path='/login' element={<LogIn />} />
-        <Route path='/' element={<Home />} />
+        <Route path='/' element={<App />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
