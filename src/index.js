@@ -3,11 +3,26 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Register from './Register';
+import ConfirmCode from './ConfirmCode';
+import LogIn from './LogIn';
+import Home from './Home';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+
+    <BrowserRouter>
+      <Routes>
+        <Route path='/home' element={<App />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/confirm-code' element={<ConfirmCode />} />
+        <Route path='/login' element={<LogIn />} />
+        <Route path='/' element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 

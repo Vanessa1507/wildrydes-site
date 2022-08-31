@@ -1,10 +1,10 @@
 {
   "version": "1",
   "cognitoConfig": {
-    "identityPoolName": "wildrydessite425458e3_identitypool_425458e3",
+    "identityPoolName": "wildrydessite30083d13a196_identitypool_3d13a196",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "wildry425458e3",
-    "userPoolName": "wildrydessite425458e3_userpool_425458e3",
+    "resourceNameTruncated": "wildry3d13a196",
+    "userPoolName": "wildrydessite30083d13a196_userpool_3d13a196",
     "autoVerifiedAttributes": [
       "email"
     ],
@@ -20,9 +20,7 @@
     "passwordPolicyMinLength": 8,
     "passwordPolicyCharacters": [],
     "requiredAttributes": [
-      "email",
-      "name",
-      "phone_number"
+      "email"
     ],
     "aliasAttributes": [],
     "userpoolClientGenerateSecret": false,
@@ -33,13 +31,12 @@
     "userpoolClientReadAttributes": [
       "email"
     ],
-    "userpoolClientLambdaRole": "wildry425458e3_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "wildry3d13a196_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "425458e3",
-    "resourceName": "wildrydessite425458e3",
+    "sharedId": "3d13a196",
+    "resourceName": "wildrydessite30083d13a196",
     "authSelections": "identityPoolAndUserPool",
     "useDefault": "default",
-    "triggers": {},
     "userPoolGroupList": [],
     "serviceName": "Cognito",
     "usernameCaseSensitive": false,

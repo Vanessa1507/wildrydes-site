@@ -1,6 +1,6 @@
 {
   "auth": {
-    "wildrydessite425458e3": {
+    "wildrydessite30083d13a196": {
       "service": "Cognito",
       "providerPlugin": "awscloudformation",
       "dependsOn": [],
@@ -9,9 +9,7 @@
         "socialProviders": [],
         "usernameAttributes": [],
         "signupAttributes": [
-          "EMAIL",
-          "NAME",
-          "PHONE_NUMBER"
+          "EMAIL"
         ],
         "passwordProtectionSettings": {
           "passwordPolicyMinLength": 8,
